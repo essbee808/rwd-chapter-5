@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* First we are just defining some global styling using the body element -- font, and line height */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 1.5;
+}
+
+/* We are turning off underlining for links */
+a {
+    text-decoration: none;
+}
+
+/* We are indenting paragraphs so paragraph text doesn't bump into other elements */
+p {
+    margin-left: 5px;
+}
+
+/* We are adding a bit of spacing around images */
+img {
+    margin: 5px;
+}
+
+/* Now we begin defining the columns that will display in full-sized browser windows */
+article {
+    width: 960px;
+    background-color: lavender;
+    color: brown;
+    min-height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section {
+    padding: 1%;
+    margin: 1%;
+    min-height: 500px;
+    float: left;
+}
+
+#a img {
+    float: left;
+}
+
+#a {
+    width: 44%;
+    background-color: green;
+    color: white;
+}
+
+#b {
+    width: 22%;
+    background-color: white;
+    color: darkgreen;
+}
+
+#c {
+    width: 22%;
+    background-color: white;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 50px;
+    color: green;
+}
