@@ -67,3 +67,73 @@ header {
     height: 50px;
     color: green;
 }
+
+/* Tablet size viewport */
+@media (min-width: 481px) and (max-width: 959px) {
+    article {
+        position: relative;
+        height: 1000px; /* define the height of 1000px */
+        width: 95%; /* change the width from a pixel value to a relative value to resize in different tablets */
+        
+    }
+
+    section {
+        min-height: 320px; /* reduce the min height */
+    }
+
+    section img {
+        float: left; /*float imgs in sections for compact tablet design */
+        padding: 10px;
+    }
+
+    #a {
+        float: none; /* remove float */
+        width: 94%; /* define width with relative value */
+    }
+
+    #b {
+        background-color: yellow; /* change background color of column b to yellow for tablet viewport */
+        float: left;
+        width: 45%; /* sizing the width to be about half the width of section a */   
+    }
+
+    #c {
+        float: left;
+        width: 45%; /* sizing the width to be about half the width of section a */
+    }
+}
+
+/* phone */
+@media (max-width:480px){
+
+    article{
+    width:100%; /*We are allowing the device to define the width -- the <article> will fill the entire width of the device*/
+    margin:0px;
+    padding:0px;
+    }
+    
+    section{
+    min-height:300px; /*We are removing constraints on width and reducing minimum height*/
+    }
+    
+    section img{
+    float:left; /*We are floating images in sections for a more compact smartphone design*/
+    padding:10px;
+    }
+    
+    #a{
+    float:none; /*We are removing the float*/
+    width:95%; /*We are defining the width with a relative value*/
+    }
+    
+    #b{
+    float:none; /*We are removing the float*/
+    width:95%; /*We are defining the width with a relative value*/
+    }
+    
+    #c{
+    float:none; /*We are removing the float*/
+    width:95%; /*We are defining the width with a relative value*/
+    }
+    
+}
